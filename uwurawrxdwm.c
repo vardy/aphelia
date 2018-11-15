@@ -21,6 +21,8 @@ int main(void) {
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
     XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("a")),
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
+    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("d")),
+        Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
     XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("s")),
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
     XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("Return")),
@@ -67,6 +69,11 @@ int main(void) {
             // Open simple terminal with mod+return
     	    if(ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("Return"))) {
                 system("st &");
+            }
+
+            // Open dmenu with mod+d
+    	    if(ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("d"))) {
+                system("dmenu_run");
             }
 
             // Close uwurawrxdwm with mod+backspace
