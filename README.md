@@ -1,4 +1,4 @@
-# UwURawrxDwm
+# uwurawrxdwm
 
 A cutie to fit right in your pocket. &^^&
 
