@@ -66,7 +66,7 @@ int main(void) {
 
             // Open konsole with mod+return
     	    if(ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("Return"))) {
-                system("konsole &");
+                system("st &");
             }
 
             // Close uwurawrxdwm with mod+backspace
