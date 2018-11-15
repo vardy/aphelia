@@ -29,8 +29,8 @@ int main(void) {
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
 
     // Capture mouse 1 and 3 keys
-    // Mouse 1 moves windows when Mod4 is held
-    // Mouse 3 resizes windows when Mod4 is held
+    // Mouse 1 moves windows when Mod1 is held
+    // Mouse 3 resizes windows when Mod1 is held
     XGrabButton(display, 1, Mod1Mask, DefaultRootWindow(display), True, 
         ButtonPressMask|ButtonReleaseMask|PointerMotionMask, GrabModeAsync, GrabModeAsync, None, None);
     XGrabButton(display, 3, Mod1Mask, DefaultRootWindow(display), True, 
