@@ -22,12 +22,17 @@ Rawr, did I scare you? *giggle*
 
 Put me together:
 ```
-sudo make all
+sudo make install
 ```
 
 Tear me apart:
 ```
-sudo clean
+sudo make clean
+```
+
+Put me back together:
+```
+sudo make reinstall
 ```
 
 ## Fork me, daddy ¯`·.¸><(((º>  
