@@ -8,39 +8,39 @@ int main(void) {
     Display * display;
     XWindowAttributes attr;
     XButtonEvent start;
-    XEvent ev; 
+    XEvent ev;
     Window foc;
     int revert_to;
 
     // Exit if display doesn't instantiate
     if(!(display = XOpenDisplay(0x0))) {
-        return 1; 
+        return 1;
     }
-	
-    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("q")), 
+
+    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("q")),
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
-    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("a")), 
+    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("a")),
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
-    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("s")), 
+    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("s")),
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
-    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("Return")), 
+    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("Return")),
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
-    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("Backspace")), 
+    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("Backspace")),
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
 
     // Capture mouse 1 and 3 keys
     // Mouse 1 moves windows when Mod4 is held
     // Mouse 3 resizes windows when Mod4 is held
-    XGrabButton(display, 1, Mod1Mask, DefaultRootWindow(display), True, 
+    XGrabButton(display, 1, Mod1Mask, DefaultRootWindow(display), True,
         ButtonPressMask|ButtonReleaseMask|PointerMotionMask, GrabModeAsync, GrabModeAsync, None, None);
-    XGrabButton(display, 3, Mod1Mask, DefaultRootWindow(display), True, 
+    XGrabButton(display, 3, Mod1Mask, DefaultRootWindow(display), True,
         ButtonPressMask|ButtonReleaseMask|PointerMotionMask, GrabModeAsync, GrabModeAsync, None, None);
-    
-    start.subwindow = None; 
+
+    start.subwindow = None;
 
     // Infinite loop
     for(;;) {
-        
+
         XNextEvent(display, &ev);
 	    XGetInputFocus(display, &foc, &revert_to);
 
@@ -48,7 +48,7 @@ int main(void) {
 
             // Close window with mod+q
     	    if(ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("q"))) {
-    	        XDestroyWindow(display, foc);	
+    	        XDestroyWindow(display, foc);
             }
 
             // Lower windows with mod+w
@@ -64,7 +64,7 @@ int main(void) {
 
     	if(ev.type == KeyPress) {
 
-            // Open konsole with mod+return
+            // Open simple terminal with mod+return
     	    if(ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("Return"))) {
                 system("st &");
             }
@@ -78,8 +78,8 @@ int main(void) {
     	if(ev.type == ButtonPress && ev.xbutton.subwindow != None) {
 
     	    XGetWindowAttributes(display, ev.xbutton.subwindow, &attr);
-    	    XSetInputFocus(display, ev.xbutton.subwindow, RevertToParent, CurrentTime); 
-    	    start = ev.xbutton;  
+    	    XSetInputFocus(display, ev.xbutton.subwindow, RevertToParent, CurrentTime);
+    	    start = ev.xbutton;
     	}
 
     	else if(ev.type == MotionNotify && start.subwindow != None) {
