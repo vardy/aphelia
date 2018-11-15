@@ -11,7 +11,7 @@ I'm smol so I fit in only a weally smol C file. I'm lightning quick; you should 
  * Push window backwards `Alt+a`
  * Pull window forward `Alt+s`
  * Kill window `Alt+q` X_X
- * Open *Konsole* `Alt+Return`
+ * Open *Suckless Terminal (st)* `Alt+Return`
  * Put me to sleepy byes `Alt+Backspace`
  * Put a boi in his place `Alt+Left Click`
  * Make a small boi a big boi `Alt+Right Click`
