@@ -4,7 +4,7 @@ This project was previously a work of satire, going under a different name, howe
 
 This window manager is single-file and a super small binary with low resource consumption. Personally, I find it's useful for focused work where you aren't moving around too much and don't need multiple workspaces (it doesn't support them, obviously).
 
-## Default key-binds
+## Default key-binds.
 
  * Push window backwards `Alt+a`
  * Pull window forward `Alt+s`
