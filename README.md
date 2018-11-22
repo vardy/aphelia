@@ -1,41 +1,39 @@
-# uwurawrxdwm
+# aphelia, the minimalist window manager
 
-A cutie to fit right in your pocket. &^^&
+This project was previously a work of satire, going under a different name, however I have decided to continue the project as it seems functional and ready to be improved upon.
 
-![Thumb](https://i.imgur.com/dultOz8.png "Thumb")
+This window manager is single-file and a super small binary with low resource consumption. Personally, I find it's useful for focused work where you aren't moving around too much and don't need multiple workspaces (it doesn't support them, obviously).
 
-I'm smol so I fit in only a weally smol C file. I'm lightning quick; you should watch me run ;) The big bullies like i3 and XFCE have got nothing on *this* hot piece of work, hehe.
-
-## Force me to do things for you @_@
+## Default key-binds.
 
  * Push window backwards `Alt+a`
  * Pull window forward `Alt+s`
- * Kill window `Alt+q` X_X
- * Open *Suckless Terminal (st)* `Alt+Return`
+ * Kill window `Alt+q`
+ * Open (Suckless) *Simple Terminal (st)* `Alt+Return`
  * Open *dmenu* `Alt+d`
- * Put me to sleepy byes `Alt+Backspace`
- * Put a boi in his place `Alt+Left Click`
- * Make a small boi a big boi `Alt+Right Click`
+ * Kill window manager `Alt+Backspace`
+ * Move windows `Alt+Left Click`
+ * Resize windows `Alt+Right Click`
 
-## Put me in your file system ô¿ô 
+New key-binds are currently added by editing `aphelia.c` and re-compiling. It's actually pretty self-explanatory as the code is quite repetetive. Couple copy-pastes, tops.
 
-Rawr, did I scare you? *giggle*
+## Installation
 
-Put me together:
+Install:
 ```
 sudo make install
 ```
 
-Tear me apart:
+Uninstall:
 ```
 sudo make clean
 ```
 
-Put me back together:
+Reinstall:
 ```
 sudo make reinstall
 ```
 
-## Fork me, daddy ¯`·.¸><(((º>  
+## Contribtuions
 
-Fork this bad girl and maybe you can make your way into my contributors. ((ºjº)) Pull-requests are more than welcome ^_^
+Fork this repo and issue pull requests to contribute. I'll look at them as soon as I am able!
