@@ -1,4 +1,5 @@
-# aphelia, the minimalist window manager
+<h3 align="center"><img src="https://i.imgur.com/o8QXIco.png" alt="logo" height="100px"></h3>
+<p align="center">The minimalist window manager.</p>
 
 This project was previously a work of satire, going under a different name, however I have decided to continue the project as it seems functional and ready to be improved upon.
 
