@@ -76,7 +76,7 @@ int main(void) {
                 system("dmenu_run");
             }
 
-            // Close uwurawrxdwm with mod+backspace
+            // Close aphelia with mod+backspace
     	    else if(ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("Backspace"))) {
                 XCloseDisplay(display);
             }
