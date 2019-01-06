@@ -37,4 +37,4 @@ sudo make reinstall
 
 ## Contributions
 
-Fork this repo and issue pull requests to contribute. I'll look at them as soon as I am able!
+Fork this repo and issue pull requests to contribute. I'll look at them as soon as I am able! 
