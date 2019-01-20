@@ -12,5 +12,5 @@ reinstall: clean
 	cp -f aphelia /usr/local/bin/
 
 clean:
-	rm -f aphelia.c
+	rm -f aphelia
 	rm -f /usr/local/lib/aphelia
