@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <style>
+    table.head, table.foot { width: 100%; }
+    td.head-rtitle, td.foot-os { text-align: right; }
+    td.head-vol { text-align: center; }
+    div.Pp { margin: 1ex 0ex; }
+    div.Nd, div.Bf, div.Op { display: inline; }
+    span.Pa, span.Ad { font-style: italic; }
+    span.Ms { font-weight: bold; }
+    dl.Bl-diag > dt { font-weight: bold; }
+    code.Nm, code.Fl, code.Cm, code.Ic, code.In, code.Fd, code.Fn,
+    code.Cd { font-weight: bold; font-family: inherit; }
+  </style>
+  <title>APHELIA(1)</title>
+</head>
+<body>
+<table class="head">
+  <tr>
+    <td class="head-ltitle">APHELIA(1)</td>
+    <td class="head-vol">FreeBSD General Commands Manual</td>
+    <td class="head-rtitle">APHELIA(1)</td>
+  </tr>
+</table>
+<div class="manual-text">
+<h1 class="Sh" title="Sh" id="NAME"><a class="permalink" href="#NAME">NAME</a></h1>
+<code class="Nm" title="Nm">aphelia</code> &#x2014;
+<div class="Nd" title="Nd">the minimalist window manager</div>
+<h1 class="Sh" title="Sh" id="SYNOPSIS"><a class="permalink" href="#SYNOPSIS">SYNOPSIS</a></h1>
+<table class="Nm">
+  <tr>
+    <td><code class="Nm" title="Nm">aphelia</code></td>
+    <td></td>
+  </tr>
+</table>
+<h1 class="Sh" title="Sh" id="DESCRIPTION"><a class="permalink" href="#DESCRIPTION">DESCRIPTION</a></h1>
+This window manager is single-file and a super small binary with low resource
+  consumption. Personally, I find it's useful for focused work where you aren't
+  moving around too much and don't need multiple workspaces (it doesn't support
+  them, obviously).
+<h1 class="Sh" title="Sh" id="KBINDINGS"><a class="permalink" href="#KBINDINGS">KBINDINGS</a></h1>
+Here are the default keybindings:
+<dl class="Bl-tag">
+  <dt><a class="permalink" href="#Alt+a"><code class="Cm" title="Cm" id="Alt+a">Alt+a</code></a></dt>
+  <dd>Push window backwords</dd>
+  <dt><a class="permalink" href="#Alt+s"><code class="Cm" title="Cm" id="Alt+s">Alt+s</code></a></dt>
+  <dd>Pull window forward</dd>
+  <dt><a class="permalink" href="#Alt+q"><code class="Cm" title="Cm" id="Alt+q">Alt+q</code></a></dt>
+  <dd>Kill window</dd>
+  <dt><a class="permalink" href="#Alt+Return"><code class="Cm" title="Cm" id="Alt+Return">Alt+Return</code></a></dt>
+  <dd>Open (Suckless) Simple Terminal (st)</dd>
+  <dt><a class="permalink" href="#Alt+d"><code class="Cm" title="Cm" id="Alt+d">Alt+d</code></a></dt>
+  <dd>Open dmenu</dd>
+  <dt><a class="permalink" href="#Alt+Backspace"><code class="Cm" title="Cm" id="Alt+Backspace">Alt+Backspace</code></a></dt>
+  <dd>Kill window manager</dd>
+  <dt><a class="permalink" href="#Alt+Left"><code class="Cm" title="Cm" id="Alt+Left">Alt+Left</code></a>
+    &#x27E8;<code class="Cm" title="Cm">click</code>&#x27E9;</dt>
+  <dd>Move windows</dd>
+  <dt><a class="permalink" href="#Alt+Right"><code class="Cm" title="Cm" id="Alt+Right">Alt+Right</code></a>
+    &#x27E8;<code class="Cm" title="Cm">click</code>&#x27E9;</dt>
+  <dd>Resize windows</dd>
+</dl>
+<h1 class="Sh" title="Sh" id="EXIT_STATUS"><a class="permalink" href="#EXIT_STATUS">EXIT
+  STATUS</a></h1>
+The <code class="Nm" title="Nm">aphelia</code> utility exits&#x00A0;0 on
+  success, and&#x00A0;&gt;0 if an error occurs.
+<h1 class="Sh" title="Sh" id="SEE_ALSO"><a class="permalink" href="#SEE_ALSO">SEE
+  ALSO</a></h1>
+<a class="Xr" title="Xr">dmenu(1)</a>, <a class="Xr" title="Xr">st(1)</a>
+<h1 class="Sh" title="Sh" id="AUTHORS"><a class="permalink" href="#AUTHORS">AUTHORS</a></h1>
+This manual page was written by <span class="An" title="An">Nuno Teixeira</span>
+  &lt;<a class="Mt" title="Mt" href="mailto:ed.arrakis@gmail.com">ed.arrakis@gmail.com</a>&gt;.</div>
+<table class="foot">
+  <tr>
+    <td class="foot-date">May 1, 2019</td>
+    <td class="foot-os">FreeBSD 12.0-RELEASE-p3</td>
+  </tr>
+</table>
+</body>
+</html>
