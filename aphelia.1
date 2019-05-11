@@ -1,0 +1,70 @@
+.Dd May 1, 2019
+.Dt APHELIA 1
+.Os
+.Sh NAME
+.Nm aphelia
+.Nd the minimalist window manager
+.Sh SYNOPSIS
+.Nm
+.\" example [-abc] [-d argument] file
+.\".Op Fl abc
+.\".Op Fl d Ar argument
+.\".Ar file
+.Sh DESCRIPTION
+This window manager is single-file and a super small binary with low
+resource consumption\&. Personally, I find it's useful for focused work
+where you aren't moving around too much and don't need multiple
+workspaces (it doesn't support them, obviously).
+.\" Options inside DESCRIPTION
+.\".Pp
+.\"The options are as follows:
+.\".Bl -tag -width ".Fl d Ar argument"
+.\".It Fl a
+.\"Example optional
+.\".Fl a
+.\"option.
+.\".It Fl b
+.\"Example optional
+.\".Fl b
+.\"option.
+.\".It Fl c
+.\"Example optional
+.\".Fl c
+.\"option.
+.\".It Fl d Ar argument
+.\"Example optional
+.\".Fl d
+.\"option with required argument
+.\".Ar argument .
+.\".It Ar file
+.\"Required argument
+.\".Ar file .
+.\".El
+.Sh KBINDINGS
+Here are the default keybindings:
+.Bl -tag -width Ds
+.It Cm Alt+a
+Push window backwords
+.It Cm Alt+s
+Pull window forward
+.It Cm Alt+q
+Kill window
+.It Cm Alt+Return
+Open (Suckless) Simple Terminal (st)
+.It Cm Alt+d
+Open dmenu
+.It Cm Alt+Backspace
+Kill window manager
+.It Cm Alt+Left Aq Cm click
+Move windows
+.It Cm Alt+Right Aq Cm click
+Resize windows
+.El
+.Sh EXIT STATUS
+.Ex -std
+.Sh SEE ALSO
+.Xr dmenu 1 ,
+.Xr st 1
+.Sh AUTHORS
+This manual page was written by
+.An Nuno Teixeira Aq Mt ed.arrakis@gmail.com .
