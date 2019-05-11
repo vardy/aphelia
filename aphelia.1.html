@@ -20,62 +20,77 @@
 <table class="head">
   <tr>
     <td class="head-ltitle">APHELIA(1)</td>
-    <td class="head-vol">FreeBSD General Commands Manual</td>
+    <td class="head-vol">General Commands Manual</td>
     <td class="head-rtitle">APHELIA(1)</td>
   </tr>
 </table>
 <div class="manual-text">
-<h1 class="Sh" title="Sh" id="NAME"><a class="permalink" href="#NAME">NAME</a></h1>
-<code class="Nm" title="Nm">aphelia</code> &#x2014;
-<div class="Nd" title="Nd">the minimalist window manager</div>
-<h1 class="Sh" title="Sh" id="SYNOPSIS"><a class="permalink" href="#SYNOPSIS">SYNOPSIS</a></h1>
-<table class="Nm">
-  <tr>
-    <td><code class="Nm" title="Nm">aphelia</code></td>
-    <td></td>
-  </tr>
-</table>
-<h1 class="Sh" title="Sh" id="DESCRIPTION"><a class="permalink" href="#DESCRIPTION">DESCRIPTION</a></h1>
-This window manager is single-file and a super small binary with low resource
-  consumption. Personally, I find it's useful for focused work where you aren't
-  moving around too much and don't need multiple workspaces (it doesn't support
-  them, obviously).
-<h1 class="Sh" title="Sh" id="KBINDINGS"><a class="permalink" href="#KBINDINGS">KBINDINGS</a></h1>
-Here are the default keybindings:
+<section class="Sh">
+<h1 class="Sh" id="NAME"><a class="permalink" href="#NAME">NAME</a></h1>
+<code class="Nm">aphelia</code> &#x2014;
+<div class="Nd">the minimalist window manager</div>
+</section>
+<section class="Sh">
+<h1 class="Sh" id="SYNOPSIS"><a class="permalink" href="#SYNOPSIS">SYNOPSIS</a></h1>
+Configuration and manipulation of software functionality should be done through
+  editing the source code. No configuration files are provided.
+</section>
+<section class="Sh">
+<h1 class="Sh" id="DESCRIPTION"><a class="permalink" href="#DESCRIPTION">DESCRIPTION</a></h1>
+A light-weight, single-file window manager. Produces a small binary with low
+  resource consumption. Useful for focused work and creating a distraction-free
+  environment.
+</section>
+<section class="Sh">
+<h1 class="Sh" id="KEY_BINDINGS"><a class="permalink" href="#KEY_BINDINGS">KEY-BINDINGS</a></h1>
+The default keybindings:
 <dl class="Bl-tag">
-  <dt><a class="permalink" href="#Alt+a"><code class="Cm" title="Cm" id="Alt+a">Alt+a</code></a></dt>
+  <dt><a class="permalink" href="#Alt+a"><code class="Cm" id="Alt+a">Alt+a</code></a></dt>
   <dd>Push window backwords</dd>
-  <dt><a class="permalink" href="#Alt+s"><code class="Cm" title="Cm" id="Alt+s">Alt+s</code></a></dt>
+  <dt><a class="permalink" href="#Alt+s"><code class="Cm" id="Alt+s">Alt+s</code></a></dt>
   <dd>Pull window forward</dd>
-  <dt><a class="permalink" href="#Alt+q"><code class="Cm" title="Cm" id="Alt+q">Alt+q</code></a></dt>
+  <dt><a class="permalink" href="#Alt+q"><code class="Cm" id="Alt+q">Alt+q</code></a></dt>
   <dd>Kill window</dd>
-  <dt><a class="permalink" href="#Alt+Return"><code class="Cm" title="Cm" id="Alt+Return">Alt+Return</code></a></dt>
+  <dt><a class="permalink" href="#Alt+Return"><code class="Cm" id="Alt+Return">Alt+Return</code></a></dt>
   <dd>Open (Suckless) Simple Terminal (st)</dd>
-  <dt><a class="permalink" href="#Alt+d"><code class="Cm" title="Cm" id="Alt+d">Alt+d</code></a></dt>
+  <dt><a class="permalink" href="#Alt+d"><code class="Cm" id="Alt+d">Alt+d</code></a></dt>
   <dd>Open dmenu</dd>
-  <dt><a class="permalink" href="#Alt+Backspace"><code class="Cm" title="Cm" id="Alt+Backspace">Alt+Backspace</code></a></dt>
+  <dt><a class="permalink" href="#Alt+Backspace"><code class="Cm" id="Alt+Backspace">Alt+Backspace</code></a></dt>
   <dd>Kill window manager</dd>
-  <dt><a class="permalink" href="#Alt+Left"><code class="Cm" title="Cm" id="Alt+Left">Alt+Left</code></a>
-    &#x27E8;<code class="Cm" title="Cm">click</code>&#x27E9;</dt>
+  <dt><a class="permalink" href="#Alt+Left"><code class="Cm" id="Alt+Left">Alt+Left</code></a>
+    &#x27E8;<code class="Cm">click</code>&#x27E9;</dt>
   <dd>Move windows</dd>
-  <dt><a class="permalink" href="#Alt+Right"><code class="Cm" title="Cm" id="Alt+Right">Alt+Right</code></a>
-    &#x27E8;<code class="Cm" title="Cm">click</code>&#x27E9;</dt>
+  <dt><a class="permalink" href="#Alt+Right"><code class="Cm" id="Alt+Right">Alt+Right</code></a>
+    &#x27E8;<code class="Cm">click</code>&#x27E9;</dt>
   <dd>Resize windows</dd>
 </dl>
-<h1 class="Sh" title="Sh" id="EXIT_STATUS"><a class="permalink" href="#EXIT_STATUS">EXIT
+</section>
+<section class="Sh">
+<h1 class="Sh" id="EXIT_STATUS"><a class="permalink" href="#EXIT_STATUS">EXIT
   STATUS</a></h1>
-The <code class="Nm" title="Nm">aphelia</code> utility exits&#x00A0;0 on
-  success, and&#x00A0;&gt;0 if an error occurs.
-<h1 class="Sh" title="Sh" id="SEE_ALSO"><a class="permalink" href="#SEE_ALSO">SEE
+The <code class="Nm">aphelia</code> utility exits&#x00A0;0 on success,
+  and&#x00A0;&gt;0 if an error occurs.
+</section>
+<section class="Sh">
+<h1 class="Sh" id="SEE_ALSO"><a class="permalink" href="#SEE_ALSO">SEE
   ALSO</a></h1>
-<a class="Xr" title="Xr">dmenu(1)</a>, <a class="Xr" title="Xr">st(1)</a>
-<h1 class="Sh" title="Sh" id="AUTHORS"><a class="permalink" href="#AUTHORS">AUTHORS</a></h1>
-This manual page was written by <span class="An" title="An">Nuno Teixeira</span>
-  &lt;<a class="Mt" title="Mt" href="mailto:ed.arrakis@gmail.com">ed.arrakis@gmail.com</a>&gt;.</div>
+<a class="Xr">dmenu(1)</a>, <a class="Xr">st(1)</a>
+</section>
+<section class="Sh">
+<h1 class="Sh" id="AUTHORS"><a class="permalink" href="#AUTHORS">AUTHORS</a></h1>
+Aphelia was written by <span class="An">Jarred Vardy</span>
+  &lt;<a class="Mt" href="mailto:jarred.vardy@gmail.com">jarred.vardy@gmail.com</a>&gt;.
+<p class="Pp">This manual page was written by <span class="An">Nuno
+    Teixeira</span>
+    &lt;<a class="Mt" href="mailto:ed.arrakis@gmail.com">ed.arrakis@gmail.com</a>&gt;
+    <span class="An">and Jarred Vardy</span>
+    &lt;<a class="Mt" href="mailto:jarred.vardy@gmail.com">jarred.vardy@gmail.com</a>&gt;.</p>
+</section>
+</div>
 <table class="foot">
   <tr>
     <td class="foot-date">May 1, 2019</td>
-    <td class="foot-os">FreeBSD 12.0-RELEASE-p3</td>
+    <td class="foot-os">Mac OS X 10.14</td>
   </tr>
 </table>
 </body>
