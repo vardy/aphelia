@@ -45,7 +45,9 @@ int main(void) {
 
         XNextEvent(display, &ev);
 	    XGetInputFocus(display, &foc, &revert_to);
-
+	XSync(display, False);
+	XSetInputFocus(display, PointerRoot, RevertToPointerRoot, CurrentTime);
+	    
     	if(ev.type == KeyPress && ev.xbutton.subwindow != None) {
 
             // Close window with mod+q
