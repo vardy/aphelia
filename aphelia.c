@@ -27,7 +27,7 @@ int main(void) {
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
     XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("Return")),
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
-    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("Backspace")),
+    XGrabKey(display, XKeysymToKeycode(display, XStringToKeysym("BackSpace")),
         Mod1Mask, DefaultRootWindow(display), True, GrabModeAsync, GrabModeAsync);
 
     // Capture mouse 1 and 3 keys
@@ -53,12 +53,12 @@ int main(void) {
     	        XDestroyWindow(display, foc);
             }
 
-            // Lower windows with mod+w
+            // Lower windows with mod+a
     	    else if (ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("a"))) {
                 XLowerWindow(display, foc);
             }
 
-            // Raise windows with mod+e
+            // Raise windows with mod+s
     	    else if (ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("s"))) {
                 XRaiseWindow(display, foc);
             }
@@ -77,7 +77,7 @@ int main(void) {
             }
 
             // Close aphelia with mod+backspace
-    	    else if(ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("Backspace"))) {
+    	    else if(ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("BackSpace"))) {
                 XCloseDisplay(display);
             }
     	}
