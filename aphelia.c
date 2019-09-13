@@ -53,12 +53,12 @@ int main(void) {
     	        XDestroyWindow(display, foc);
             }
 
-            // Lower windows with mod+w
+            // Lower windows with mod+a
     	    else if (ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("a"))) {
                 XLowerWindow(display, foc);
             }
 
-            // Raise windows with mod+e
+            // Raise windows with mod+s
     	    else if (ev.xkey.keycode == XKeysymToKeycode(display, XStringToKeysym("s"))) {
                 XRaiseWindow(display, foc);
             }
